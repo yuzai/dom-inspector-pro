@@ -15,7 +15,7 @@ declare class DomInspector {
     private event;
     private overlay;
     private _throttleOnMove;
-    constructor(options: {
+    constructor(options?: {
         theme?: string;
         maxZIndex?: number;
         mode?: 'single' | 'multi';
