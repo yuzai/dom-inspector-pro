@@ -9,6 +9,7 @@
     "dev": "rollup --config rollup.config.dev.ts --configPlugin typescript -w",
     "build": "rollup --config rollup.config.build.ts --configPlugin typescript"
   },
+  "files": ["dist/*"],
   "keywords": [],
   "author": "",
   "license": "ISC",
