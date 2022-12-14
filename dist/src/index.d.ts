@@ -8,8 +8,8 @@ declare class DomInspector {
     xpath: string | null;
     target: Target;
     status: 'enable' | 'disable' | 'pause';
-    onMoveSelect: (target: Target) => void;
-    onDidSelect: (target: Target) => void;
+    private onMoveSelect;
+    private onDidSelect;
     private assistEle;
     private _cachedTarget;
     private event;
@@ -34,3 +34,4 @@ declare class DomInspector {
     private _onMoveEnd;
 }
 export default DomInspector;
+export * from './dom';
