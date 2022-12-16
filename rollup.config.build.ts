@@ -30,6 +30,19 @@ const config: RollupOptions[] = [
       })
     ],
   },
+  {
+    input: 'demo/index.ts',
+    output: [
+      {
+        dir: 'demo',
+        format: 'umd',
+      },
+    ],
+    plugins: [
+      typescript(),
+      postcss(),
+    ],
+  }
 ];
 
 export default config;

@@ -15,7 +15,11 @@ Dom inspector like chrome dev tools。
 
 故称为 dom-inspector-pro.
 
-使用 demo 可以查看这个[例子](https://blog.maxiaobo.com.cn/dom-inspector-pro/demo/index.html)。演示了 多选、svg 元素、transform 等边界场景的支持
+使用 demo 可以查看这个[例子](https://blog.maxiaobo.com.cn/dom-inspector-pro/demo/index.html)。演示了 多选、svg 元素、transform 等边界场景的支持。
+
+移动端也可直接扫码体验：
+
+[img](https://tva1.sinaimg.cn/large/008vxvgGly1h95hsdv1l9j307f07ejrs.jpg)
 
 ## 使用方法
 

@@ -8,7 +8,6 @@ export declare function getElementInfo(ele: HTMLElement): {
     [key: string]: any;
 };
 export declare function getMaxZIndex(): number;
-export default $;
 export declare function createElement(tag: string, attr: {
     [key: string]: any;
 }, content?: string): HTMLElement;
