@@ -19,7 +19,7 @@ Dom inspector like chrome dev tools。
 
 移动端也可直接扫码体验：
 
-[img](https://tva1.sinaimg.cn/large/008vxvgGly1h95hsdv1l9j307f07ejrs.jpg)
+![img](https://tva1.sinaimg.cn/large/008vxvgGly1h95hsdv1l9j307f07ejrs.jpg)
 
 ## 使用方法
 
