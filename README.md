@@ -29,16 +29,20 @@ Dom inspector like chrome dev tools。
 npm install dom-inspector-pro --save
 ```
 
+script 使用
+
 ```html
 <script type="text/javascript" src="./dist/index.js"></script>
 ```
 
+npm 包使用
+
 ```js
-const DomInspector = require('dom-inspector');
+const DomInspector = require('dom-inspector-pro');
 ```
 
 ```js
-import DomInspector from 'dom-inspector';
+import DomInspector from 'dom-inspector-pro';
 ```
 
 ### 实例化
@@ -66,6 +70,18 @@ const inspector = new DomInspector({
     env: 'pc' | 'mobile', // 可选, 如果不填，则内部会根据浏览器 ua 进行移动端 or pc 端的判断
     mode: 'single' | 'multi' // 可选, 开启多选 or 单选，如果是多选模式，则会在选中元素时，检测该元素是否处于列表中，如果是，则会全选多个元素
 });
+```
+
+### 启动、暂停与关闭
+
+```js
+const inspector = new DomInspector();
+
+inspector.enable();
+
+inspector.disable();
+
+inspector.pause();
 ```
 
 ### 内部属性及方法
