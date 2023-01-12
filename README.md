@@ -131,3 +131,11 @@ class DomInspector {
 ### 其他工具方法
 
 在可视化埋点中，还有一些必备的工具方法，比如： 获取元素的 xpath，检测列表元素等等，本项目也对这些工具方法进行了抛出，可自行查看 ts 定义选择使用
+
+### iframe 中使用
+
+本库并不能直接在 iframe 中使用，不过可以作为一个环节来在 iframe 中使用，方案如下：
+
+iframe 中的页面 接入 inspector 脚本，同时注入一段 iframe 通信的脚本。
+
+在主页面中，通过发送 指令，操控 inspector 来完成圈选， inspector 圈选结束后，向主页面发送消息，在主页面对 target 进行操控，从而完成 iframe 中使用的流程，具体可以参考文章 [可视化埋点（一）：从0到1搭建可视化埋点平台](https://blog.maxiaobo.com.cn/2022/09/03/%E5%8F%AF%E8%A7%86%E5%8C%96%E5%9F%8B%E7%82%B9%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E4%BB%8E0%E5%88%B01%E6%90%AD%E5%BB%BA%E5%8F%AF%E8%A7%86%E5%8C%96%E5%9F%8B%E7%82%B9%E5%B9%B3%E5%8F%B0/)
