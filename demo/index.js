@@ -1,12 +1,4 @@
-import DomInspector from "../src/index";
-
-declare global {
-    interface Window {
-        inspector: DomInspector;
-    }
-} 
-
-window.inspector = new DomInspector({
+window.inspector = new DomInspector.default({
     maxZIndex: 9999,
     onMoveSelect: (target) => {
         console.log(target);
